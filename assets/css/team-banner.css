@@ -1,0 +1,28 @@
+/* Team Banner */
+.teams-banner{
+    width: 100%;
+    background: #fff;
+    height: 70px;
+    display: flex;
+}
+
+.teams-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1220px;
+    margin: 0 auto;
+}
+
+.team-item{
+    text-decoration: none;
+    flex: 1;
+    text-align: center;
+}
+
+
+.team-item img{
+    height: 40px;
+    vertical-align: middle;
+}
+

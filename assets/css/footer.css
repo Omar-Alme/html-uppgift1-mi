@@ -1,0 +1,56 @@
+/* Footer */
+
+footer{
+    margin-top: 80px;
+}
+
+.footer-container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer-sponsors{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1px;
+    padding-bottom: 1px;
+}
+
+.footer-sponsor-item{
+    display: flex;
+    flex: 25%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid #dadada;
+    padding: 30px 15px;
+}
+
+.footer-sponsor-item img{
+    max-height: 75px;
+}
+
+.sponsor-text{
+    font-family: 'Gilroy-light', sans-serif;
+    color: var(--text-color-secondary);
+}
+
+.copyright{
+    font-family: 'Gilroy-light', sans-serif;
+}
+
+.footer-list{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+}
+
+.footer-list li, .footer-list a{
+    font-family: 'Gilroy-light', sans-serif;
+    color: #dadada;
+    text-decoration: none;
+    font-size: 14px;
+}

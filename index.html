@@ -157,7 +157,7 @@
     </header>
     <main class="main-container"> 
         <section class="row">
-            <div class="col-12 d-flex align-items-center mb-4">
+            <div class="col-12 d-flex align-items-center mb-4 sub-heading-container">
                 <h2 class="sub-heading flex-grow-1">
                     Senaste NYHETER
                 </h2>
@@ -174,7 +174,7 @@
                             <img src="/assets/images/europa-spel-599x337.jpg"
                                 alt="Svenska lagens motstånd i Europa och Conference League">
                             <div class="newsletter-featured-content">
-                                <time class="text-small text-uppercase fw-bold mb-1 text-color">
+                                <time class="text-small text-uppercase fw-bold mb-1 text-color-yellow">
                                     30 augusti 
                                 </time>
                                 <h2 class="featured-title mb-2">
@@ -192,15 +192,14 @@
                             class="featured-list-horizontal d-flex text-decoration-none">
                             <img src="assets/images/publik-2-miljoner-vsk-599x374.jpeg"
                                 alt="Publikökningen i Allsvenskan och Superettan fortsätter – Över två miljoner arenabesök">
-                            <div class="article-horizontal__info">
-                                <time class="text-small text-color text-uppercase fw-bold mb-1"
-                                    datetime="2024-08-28T09:06:28+01:00">
+                            <div class="featured-list-content text-decoration-none py-3 px-3">
+                                <time class="text-small text-color-yellow text-uppercase fw-bold mb-1">
                                     28 augusti </time>
                                 <h2 class="featured-title text-transform-none mb-2">
                                     Publikökningen i Allsvenskan och Superettan fortsätter – Över två miljoner
                                     arenabesök
                                 </h2>
-                                <p class="text-small text-sm-regular fw-bold d-block d-sm-none">
+                                <p class="text-small d-block d-sm-none">
                                     Hittills under årets säsong av Allsvenskan och Superettan går det att se en ökning
                                     vad
                                     gäller antalet besökare på de… </p>
@@ -211,13 +210,12 @@
                             class="featured-list-horizontal d-flex text-decoration-none">
                             <img src="assets/images/mall-webb-platta-1200x675-kopiera-599x337.jpg"
                                 alt="Allsvenskans omgång 27-30 fastställda">
-                            <div class="article-horizontal__info">
-                                <time class="text-small text-color text-uppercase fw-bold mb-1"
-                                    datetime="2024-08-26T13:05:48+01:00">
+                            <div class="featured-list-content text-decoration-none py-3 px-3">
+                                <time class="text-small text-color-yellow text-uppercase mb-1">
                                     26 augusti </time>
                                 <h2 class="featured-title mb-2">
                                     Allsvenskans omgång 27-30 fastställda </h2>
-                                <p class="text-small text-sm-regular fw-bold d-block d-sm-none">
+                                <p class="text-small d-block d-sm-none">
                                     De avslutande omgångarna för jubileumssäsongen av Allsvenskan är nu fastställda.
                                     Allsvenskans jubileumsår är snart framme… </p>
                             </div>
@@ -226,13 +224,12 @@
                             title="Allsvenskan firar 100 år med två jubileumsomgångar"
                             class="featured-list-horizontal d-flex text-decoration-none">
                             <img src="assets/images/1-599x337.jpg" alt="Allsvenskan firar 100 år med två jubileumsomgångar">
-                            <div class="article-horizontal__info">
-                                <time class="text-small text-color text-uppercase fw-bold mb-1"
-                                    datetime="2024-08-25T20:40:11+01:00">
+                            <div class="featured-list-content text-decoration-none py-3 px-3">
+                                <time class="text-small text-color-yellow text-uppercase mb-1">
                                     25 augusti </time>
                                 <h2 class="featured-title mb-2">
                                     Allsvenskan firar 100 år med två jubileumsomgångar </h2>
-                                <p class="text-small text-sm-regular fw-bold d-block d-sm-none">
+                                <p class="text-small d-block d-sm-none">
                                     Pompa och ståt – och jubileumströjor. Här är Allsvenskans 100-årsfirande! 1924
                                     spelades
                                     den allra första upplagan av… </p>
@@ -317,7 +314,7 @@
                                     alt="Allsvenska minnena lever kvar hos Blekinges publikfavorit"></a>
                             <div class="article-info">
                                 <p class="article-date text-color-primary-yellow text-uppercase">26 juli 2024</p>
-                                <p class="article-title text-color-primary-white"><a class="text-color-primary-white"
+                                <p class="article-title text-color-primary-white"><a class="team-item-primary-white"
                                         href="https://allsvenskan.se/nyheter/allsvenska-minnena-lever-kvar-hos-blekinges-publikfavorit/">Allsvenska
                                         minnena lever kvar hos Blekinges publikfavorit</a></p>
                             </div>
@@ -397,7 +394,120 @@
             </div>
         </section>
 
-        
+        <div id="team-carousel" class="d-lg-none"></div>
+        <section class="row mb-5">
+            <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                <div class="stats-table">
+                    <div class="stats-table__row stats-table__row--header">
+                        <div class="stats-table__name stats-table__name--header heading-h6 heading-sm-h3">
+                            Tabellen
+                        </div>
+                        <div class="stats-table__games heading-stats-name">
+                            S
+                        </div>
+                        <div class="stats-table__wins heading-stats-name">
+                            V
+                        </div>
+                        <div class="stats-table__ties heading-stats-name">
+                            O
+                        </div>
+                        <div class="stats-table__losses heading-stats-name">
+                            F
+                        </div>
+                        <div class="stats-table__plus-minus heading-stats-name">
+                            +/-
+                        </div>
+                        <div class="stats-table__points heading-stats-name">
+                            P
+                        </div>
+                    </div>
+                    <div id="standings-table-body"></div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <div class="stats-table stats-table--player-stats">
+                            <div class="stats-table__row stats-table__row--player stats-table__row--header">
+                                <div
+                                    class="stats-table__player-image stats-table__player-image--header heading-h6 heading-sm-h3">
+                                    Skytteligan
+                                </div>
+                                <div class="stats-table__number stats-table__number--header heading-stats-name">
+                                    #
+                                </div>
+                                <div class="stats-table__player stats-table__player--header heading-stats-name">
+                                    Spelare
+                                </div>
+                                <div class="stats-table__played stats-table__played--header heading-stats-name">
+                                    Matcher
+                                </div>
+                                <div class="stats-table__value stats-table__value--header heading-stats-name">
+                                    MÅL
+                                </div>
+                            </div>
+                            <div id="leaders-goals-table-body-limit-5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="stats-table stats-table--player-stats">
+                            <div class="stats-table__row stats-table__row--player stats-table__row--header">
+                                <div
+                                    class="stats-table__player-image stats-table__player-image--header heading-h6 heading-sm-h3">
+                                    Assistligan
+                                </div>
+                                <div class="stats-table__number stats-table__number--header heading-stats-name">
+                                    #
+                                </div>
+                                <div class="stats-table__player stats-table__player--header heading-stats-name">
+                                    Spelare
+                                </div>
+                                <div class="stats-table__played stats-table__played--header heading-stats-name">
+                                    Matcher
+                                </div>
+                                <div class="stats-table__value stats-table__value--header heading-stats-name">
+                                    ASSIST
+                                </div>
+                            </div>
+                            <div id="leaders-assist-table-body-limit-5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="current-matches-on-match-day"></div>
+        <section class="row mt-4">
+            <!-- <div class="col-12 mb-4">
+            <div class="d-none d-sm-block custom-ad-style">
+                <a href=""
+                    rel="nofollow noreferrer noopener" target="_blank">
+                    <img src="/assets/images/SEF-Banners-2024_AS_1110x159.jpg" alt="SEF Advertisement">
+                    <img src="/"
+                        border="0" height="1" width="1" alt="Advertisement">
+                </a> </div>
+            <div class="d-block d-sm-none custom-ad-style">
+                <a href=""
+                    rel="nofollow noreferrer noopener" target="_blank">
+                    <img src="/assets/images/SEF-Banners-2024_AS_640x320.jpg" alt="SEF Advertisement">
+                    <img src="/"
+                        border="0" height="1" width="1" alt="Advertisement">
+                </a> </div>
+        </div> -->
+            <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+                <a class="border-radius-10" href="https://se.select-sport.com" target="_blank" rel="noopener nofollow">
+                    <img class="border-radius-10" width="100%" src="/assets/images/puff-right.png" alt="Right"> </a>
+            </div>
+            <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+                <a class="border-radius-10" href="https://www.pandemifonden.se" target="_blank" rel="noopener nofollow">
+                    <img class="border-radius-10" width="100%" src="/assets/images/puff-left-pandemifonden.png"
+                        alt="Left">
+                </a>
+            </div>
+        </section>
+        <!--        <div id="spectator-widget"></div>-->
+        <div id="team-news" class="mt-5"></div>
     </main>
     <footer>
         <div class="">
@@ -442,7 +552,37 @@
                 </div>
             </div>
         </div>
-
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-6 col-lg-3 order-1 order-lg-0 d-flex align-items-center">
+                    <span class="text-small text-color-primary-yellow">
+                        © Allsvenskan 2024 </span>
+                </div>
+                <div
+                    class="col-12 col-lg-6 order-0 order-lg-1 d-flex align-items-center justify-content-lg-center mb-4 mb-lg-0">
+                    <ul class="footer-nav">
+                        <li id="menu-item-5092"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5092"><a
+                                href="http://www.svenskelitfotboll.se/allmanna-villkor/">ALLMÄNNA VILLKOR</a></li>
+                        <li id="menu-item-5093"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5093"><a
+                                href="http://www.svenskelitfotboll.se/integritetspolicy/">INTEGRITETSPOLICY</a></li>
+                        <li id="menu-item-5094"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5094"><a
+                                href="http://www.svenskelitfotboll.se/svensk-elitfotboll-och-gdpr/">GDPR</a></li>
+                        <li id="menu-item-49"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49"><a
+                                href="https://allsvenskan.se/cookies/">COOKIES</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1 order-2 d-flex align-items-center justify-content-end">
+                    <a href="/">
+                        <img style="width: 100%" src="assets/images/allsvenskan-footer-2024.png"
+                            alt="Allsvenskan footer logo">
+                    </a>
+                </div>
+            </div>
+        </div>
 
     </footer>
 

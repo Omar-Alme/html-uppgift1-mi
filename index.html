@@ -1,11 +1,454 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv-SE">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Allsvenskan</title>
+    <meta name="theme-color" content="#0E204D">
+    <meta name="description" content="Fotboll. På riktigt.">
+    <meta name="image"
+        content="https://allsvenskan.se/wp-content/themes/sef-leagues/images/allsvenskan/allsvenskan-logo-meta.png">
+
+    <meta property="og:url" content="https://allsvenskan.se">
+    <meta property="og:title" content="Allsvenskan">
+    <meta property="og:description" content="Fotboll. På riktigt.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/assets/images/allsvenskan-logo-meta.png">
+    <meta property="og:site_name" content="">
+
+    <link rel="icon" href="favicon.ico" sizes="32x32">
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="manifest" href="/wp-content/themes/sef-leagues/images/allsvenskan/site.webmanifest">
+
+    <link rel="stylesheet" href="css/all.css" crossorigin="anonymous">
+
+
+    <!-- Bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" id="sef-css" href="assets/css/main.css" type="text/css" media="all">
+
 </head>
-<body>
-    
+
+<body class="home blog eplus_styles allsvenskan">
+    <div class="backdrop"></div>
+    <header class="header">
+        <div id="teams-banner">
+            <div class="teams-banner">
+                <div class="teams-container">
+                    <a href="" class="team-item">
+                        <img src="assets/images/teams/aik.png" alt="AIK Logo">
+                    </a>
+                    <a href="" class="team-item">
+                        <img src="assets/images/teams/bkhacken.png" alt="BK Häcken Logo">
+                    </a>
+                    <a href="" class="team-item">
+                        <img src="assets/images/teams/Djurgrden.png" alt="Djurgården Logo">
+                    </a>
+                    <a href="" class="team-item">
+                        <img src="assets/images/teams/gais.png" alt="GAIS Logo">
+                    </a>
+                    <a href="" class="team-item">
+                        <img src="assets/images/teams/halmstadbk.png" alt="Halmstads Bk Logo">
+                    </a>
+                    <a href="" class="team-item">
+                        <img src="assets/images/teams/hammarby.png" alt="Hammarby IF Logo">
+                    </a>
+                    <a href="" class="team-item">
+                        <img src="assets/images/teams/brommapojkarna.png" alt="IF Brommapojkarna Logo">
+                    </a>
+                    <a href="" class="team-item">
+                        <img src="assets/images/teams/ife.png" alt="IF Elfsborg Logo">
+                    </a>
+                    <a href="" class="team-item">
+                        <img src="assets/images/teams/ifkgoteborg.png" alt="IFK Göteborg Logo">
+                    </a>
+                    <a href="" class="team-item">
+                        <img src="assets/images/teams/ifknorrkoping.png" alt="IFK Norrköping Logo">
+                    </a>
+                    <a href="" class="team-item">
+                        <img src="assets/images/teams/ifkvarnamo.png" alt="IFK Värnamo Logo">
+                    </a>
+                    <a href="" class="team-item">
+                        <img src="assets/images/teams/iksirius.png" alt="IK Sirius Logo">
+                    </a>
+                    <a href="" class="team-item">
+                        <img src="assets/images/teams/kalmarff.png" alt="Kalmar FF Logo">
+                    </a>
+                    <a href="" class="team-item">
+                        <img src="assets/images/teams/mff.png" alt="Malmö FF Logo">
+                    </a>
+                    <a href="" class="team-item">
+                        <img src="assets/images/teams/mjallby.png" alt="Mjällby AIF Logo">
+                    </a>
+                    <a href="" class="team-item">
+                        <img src="assets/images/teams/vsk.png" alt="västerås SK Logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="navigation mt-3 mt-md-4">
+            <nav class="navbar navbar-expand-lg navbar-dark py-1">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/allsvenskan-anniversary.svg" alt="Allsvenskan logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Matcher</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Statistik</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">100 år</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Play</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Fantasy</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Mer
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Nyheter</a></li>
+                                    <li><a class="dropdown-item" href="#">Fotbollskonto</a></li>
+                                    <li><a class="dropdown-item" href="#">Appar</a></li>
+                                    <li><a class="dropdown-item" href="#">Biljetter</a></li>
+                                    <li><a class="dropdown-item" href="#">Kalender</a></li>
+                                    <li><a class="dropdown-item" href="#">Månadens Spelare</a></li>
+                                    <li><a class="dropdown-item" href="#">Månadens Tränare</a></li>
+                                    <li><a class="dropdown-item" href="#">Allsvenskans Stora Pris</a></li>
+                                    <li><a class="dropdown-item" href="#">Samhällsansvar</a></li>
+                                    <li><a class="dropdown-item" href="#">Eallssvenskan</a></li>
+                                    <li><a class="dropdown-item" href="#">Om Oss</a></li>
+                                    <li><a class="dropdown-item" href="#">Uppförandekod</a></li>
+                                    <li><a class="dropdown-item" href="#">Kontakt</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="navigation-actions d-flex align-items-center">
+                            <div class="header-sponsorships">
+                            <a href="https://www.strawberry.se" class="sponsor-logo">
+                                <img src="assets/images/strawberry-logo-white.png" alt="Strawberry">
+                            </a>
+                        </div>
+                            <a href="#" class="button button--primary">Biljett</a>
+                            <a href="#" class="button button--primary">Logga In</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+    <main class="main-container"> 
+        <section class="row">
+            <div class="col-12 d-flex align-items-center mb-4">
+                <h2 class="sub-heading flex-grow-1">
+                    Senaste NYHETER
+                </h2>
+                <a class="button button--primary ml-auto" href="/nyheter" title="newsletter">
+                    <span class="d-none d-sm-inline-block">Se</span>
+                    <span class="d-inline-block">fler NYHETER</span>
+                </a>
+            </div>
+            <div class="col-12">
+                <div class="newsletter-container d-flex">
+                    <div class="newsletter-featured pe-0 pe-lg-2">
+                        <a href="https://allsvenskan.se/nyheter/svenska-lagens-motstand-i-europa-och-conference-league/"
+                            title="Svenska lagens motstånd i Europa och Conference League" class="featured-news">
+                            <img src="/assets/images/europa-spel-599x337.jpg"
+                                alt="Svenska lagens motstånd i Europa och Conference League">
+                            <div class="newsletter-featured-content">
+                                <time class="text-small text-uppercase fw-bold mb-1 text-color">
+                                    30 augusti 
+                                </time>
+                                <h2 class="featured-title mb-2">
+                                    Svenska lagens motstånd i Europa och Conference League </h2>
+                                <p class="featured-description fw-bold">
+                                    Under fredagseftermiddagen genomfördes lottningen för ligafasen av UEFA Europa
+                                    League
+                                    och UEFA Conference League. Malmö FF och… </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="featured-list d-flex">
+                        <a href="https://allsvenskan.se/nyheter/publikokningen-i-allsvenskan-och-superettan-fortsatter-over-tva-miljoner-arenabesok/"
+                            title="Publikökningen i Allsvenskan och Superettan fortsätter – Över två miljoner arenabesök"
+                            class="featured-list-horizontal d-flex text-decoration-none">
+                            <img src="assets/images/publik-2-miljoner-vsk-599x374.jpeg"
+                                alt="Publikökningen i Allsvenskan och Superettan fortsätter – Över två miljoner arenabesök">
+                            <div class="article-horizontal__info">
+                                <time class="text-small text-color text-uppercase fw-bold mb-1"
+                                    datetime="2024-08-28T09:06:28+01:00">
+                                    28 augusti </time>
+                                <h2 class="featured-title text-transform-none mb-2">
+                                    Publikökningen i Allsvenskan och Superettan fortsätter – Över två miljoner
+                                    arenabesök
+                                </h2>
+                                <p class="text-small text-sm-regular fw-bold d-block d-sm-none">
+                                    Hittills under årets säsong av Allsvenskan och Superettan går det att se en ökning
+                                    vad
+                                    gäller antalet besökare på de… </p>
+                            </div>
+                        </a>
+                        <a href="https://allsvenskan.se/nyheter/allsvenskans-omgang-27-30-faststallda/"
+                            title="Allsvenskans omgång 27-30 fastställda"
+                            class="featured-list-horizontal d-flex text-decoration-none">
+                            <img src="assets/images/mall-webb-platta-1200x675-kopiera-599x337.jpg"
+                                alt="Allsvenskans omgång 27-30 fastställda">
+                            <div class="article-horizontal__info">
+                                <time class="text-small text-color text-uppercase fw-bold mb-1"
+                                    datetime="2024-08-26T13:05:48+01:00">
+                                    26 augusti </time>
+                                <h2 class="featured-title mb-2">
+                                    Allsvenskans omgång 27-30 fastställda </h2>
+                                <p class="text-small text-sm-regular fw-bold d-block d-sm-none">
+                                    De avslutande omgångarna för jubileumssäsongen av Allsvenskan är nu fastställda.
+                                    Allsvenskans jubileumsår är snart framme… </p>
+                            </div>
+                        </a>
+                        <a href="https://allsvenskan.se/nyheter/allsvenskan-firar-100-ar-med-tva-jubileumsomgangar/"
+                            title="Allsvenskan firar 100 år med två jubileumsomgångar"
+                            class="featured-list-horizontal d-flex text-decoration-none">
+                            <img src="assets/images/1-599x337.jpg" alt="Allsvenskan firar 100 år med två jubileumsomgångar">
+                            <div class="article-horizontal__info">
+                                <time class="text-small text-color text-uppercase fw-bold mb-1"
+                                    datetime="2024-08-25T20:40:11+01:00">
+                                    25 augusti </time>
+                                <h2 class="featured-title mb-2">
+                                    Allsvenskan firar 100 år med två jubileumsomgångar </h2>
+                                <p class="text-small text-sm-regular fw-bold d-block d-sm-none">
+                                    Pompa och ståt – och jubileumströjor. Här är Allsvenskans 100-årsfirande! 1924
+                                    spelades
+                                    den allra första upplagan av… </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="current-matches"></div>
+        <section class="mt-4 pt-lg-5 pb-lg-5 article-scroll-section">
+            <div class="row" style="max-width: 1400px; margin: 0 auto;">
+                <div class="col-12 d-block front-anniversary-post-header mb-4">
+                    <h2 class="heading-h6 heading-sm-h3 flex-grow-1 text-color-primary-white">
+                        Allsvenskan 100 år </h2>
+                    <p class="anniversary-heading-sub anniversary-front-page text-color-primary-white mb-0">
+                    </p>
+                </div>
+                <div class="col-12 px-lg-0">
+                    <div class="article-scroll__container article-scroll__container--carousel scrollbar-blue">
+                        <div class="article-scroll__item text-decoration-none">
+                            <a href="https://allsvenskan.se/nyheter/fran-varmland-till-varldsscenen/"><img
+                                    src="images/ralf-1920x1080-kopiera-599x337.png"
+                                    alt="Från Värmland till världsscenen"></a>
+                            <div class="article-info">
+                                <p class="article-date text-color-primary-yellow text-uppercase">5 september 2024</p>
+                                <p class="article-title text-color-primary-white"><a class="text-color-primary-white"
+                                        href="https://allsvenskan.se/nyheter/fran-varmland-till-varldsscenen/">Från
+                                        Värmland
+                                        till världsscenen</a></p>
+                            </div>
+                            <div class="d-flex flex-row" style="margin-left: 15px;">
+                                <a class="anniversary-taxonomy-button">Legendarer</a> </div>
+                        </div>
+                        <div class="article-scroll__item text-decoration-none">
+                            <a href="https://allsvenskan.se/nyheter/allsvenskans-resa-fran-amator-till-proffs/"><img
+                                    src="images/amator-till-proffs-1920x1080-1-599x337.png"
+                                    alt="Allsvenskans resa från amatör till proffs"></a>
+                            <div class="article-info">
+                                <p class="article-date text-color-primary-yellow text-uppercase">30 augusti 2024</p>
+                                <p class="article-title text-color-primary-white"><a class="text-color-primary-white"
+                                        href="https://allsvenskan.se/nyheter/allsvenskans-resa-fran-amator-till-proffs/">Allsvenskans
+                                        resa från amatör till proffs</a></p>
+                            </div>
+                            <div class="d-flex flex-row" style="margin-left: 15px;">
+                                <a class="anniversary-taxonomy-button">Klubbarna</a> </div>
+                        </div>
+                        <div class="article-scroll__item text-decoration-none">
+                            <a href="https://allsvenskan.se/nyheter/sa-var-allsvenskans-forsta-match/"><img
+                                    src="images/ifke-iks-100-kopiera-599x337.png"
+                                    alt="Så var Allsvenskans första match"></a>
+                            <div class="article-info">
+                                <p class="article-date text-color-primary-yellow text-uppercase">8 augusti 2024</p>
+                                <p class="article-title text-color-primary-white"><a class="text-color-primary-white"
+                                        href="https://allsvenskan.se/nyheter/sa-var-allsvenskans-forsta-match/">Så var
+                                        Allsvenskans första match</a></p>
+                            </div>
+                            <div class="d-flex flex-row" style="margin-left: 15px;">
+                                <a class="anniversary-taxonomy-button">Klubbarna</a><a
+                                    class="anniversary-taxonomy-button">Ögonblick</a> </div>
+                        </div>
+                        <div class="article-scroll__item text-decoration-none">
+                            <a
+                                href="https://allsvenskan.se/nyheter/sverige-har-i-100-ar-utvecklats-och-gatt-framat-tillsammans-med-allsvenskan-i-fotboll/"><img
+                                    src="/assets/images/skarm-599x337.png"
+                                    alt="Sverige har i 100 år utvecklats och gått framåt tillsammans med Allsvenskan i fotboll"></a>
+                            <div class="article-info">
+                                <p class="article-date text-color-primary-yellow text-uppercase">29 juli 2024</p>
+                                <p class="article-title text-color-primary-white"><a class="text-color-primary-white"
+                                        href="https://allsvenskan.se/nyheter/sverige-har-i-100-ar-utvecklats-och-gatt-framat-tillsammans-med-allsvenskan-i-fotboll/">Sverige
+                                        har i 100 år utvecklats och gått framåt tillsammans med Allsvenskan i
+                                        fotboll</a>
+                                </p>
+                            </div>
+                            <div class="d-flex flex-row" style="margin-left: 15px;">
+                                <a class="anniversary-taxonomy-button">Nyheter</a> </div>
+                        </div>
+                        <div class="article-scroll__item text-decoration-none">
+                            <a
+                                href="https://allsvenskan.se/nyheter/allsvenska-minnena-lever-kvar-hos-blekinges-publikfavorit/"><img
+                                    src="/assets/images/hogadal-1920x1080-kopiera2-599x337.png"
+                                    alt="Allsvenska minnena lever kvar hos Blekinges publikfavorit"></a>
+                            <div class="article-info">
+                                <p class="article-date text-color-primary-yellow text-uppercase">26 juli 2024</p>
+                                <p class="article-title text-color-primary-white"><a class="text-color-primary-white"
+                                        href="https://allsvenskan.se/nyheter/allsvenska-minnena-lever-kvar-hos-blekinges-publikfavorit/">Allsvenska
+                                        minnena lever kvar hos Blekinges publikfavorit</a></p>
+                            </div>
+                            <div class="d-flex flex-row" style="margin-left: 15px;">
+                                <a class="anniversary-taxonomy-button">Klubbarna</a><a
+                                    class="anniversary-taxonomy-button">Supportrar</a> </div>
+                        </div>
+                        <div class="article-scroll__item text-decoration-none">
+                            <a href="https://allsvenskan.se/nyheter/silverholt-satte-rekord-pa-banken/"><img
+                                    src="/assets/images/Silverholt-1920x1080-kopiera-599x337.png"
+                                    alt="Silverholt satte rekord på bänken"></a>
+                            <div class="article-info">
+                                <p class="article-date text-color-primary-yellow text-uppercase">12 juli 2024</p>
+                                <p class="article-title text-color-primary-white"><a class="text-color-primary-white"
+                                        href="https://allsvenskan.se/nyheter/silverholt-satte-rekord-pa-banken/">Silverholt
+                                        satte rekord på bänken</a></p>
+                            </div>
+                            <div class="d-flex flex-row" style="margin-left: 15px;">
+                                <a class="anniversary-taxonomy-button">Rekord</a> </div>
+                        </div>
+                        <div class="article-scroll__item text-decoration-none">
+                            <a href="https://allsvenskan.se/nyheter/nar-mattigol-lamnade-sitt-boras/"><img
+                                    src="/assets/images/overgangar-Mattiasson-1920x1080-kopiera-599x337.png"
+                                    alt="När “Mattigol” lämnade sitt Borås"></a>
+                            <div class="article-info">
+                                <p class="article-date text-color-primary-yellow text-uppercase">26 juni 2024</p>
+                                <p class="article-title text-color-primary-white"><a class="text-color-primary-white"
+                                        href="https://allsvenskan.se/nyheter/nar-mattigol-lamnade-sitt-boras/">När
+                                        “Mattigol” lämnade sitt Borås</a></p>
+                            </div>
+                            <div class="d-flex flex-row" style="margin-left: 15px;">
+                                <a class="anniversary-taxonomy-button">Legendarer</a><a
+                                    class="anniversary-taxonomy-button">Ögonblick</a> </div>
+                        </div>
+                        <div class="article-scroll__item text-decoration-none">
+                            <a href="https://allsvenskan.se/nyheter/fallet-blev-langt-for-redbergslids-ik/"><img
+                                    src="/assets/images/redbergslids-ik-1920x1080-1-599x337.png"
+                                    alt="Fallet blev långt för Redbergslids IK"></a>
+                            <div class="article-info">
+                                <p class="article-date text-color-primary-yellow text-uppercase">4 juni 2024</p>
+                                <p class="article-title text-color-primary-white"><a class="text-color-primary-white"
+                                        href="https://allsvenskan.se/nyheter/fallet-blev-langt-for-redbergslids-ik/">Fallet
+                                        blev långt för Redbergslids IK</a></p>
+                            </div>
+                            <div class="d-flex flex-row" style="margin-left: 15px;">
+                                <a class="anniversary-taxonomy-button">Klubbarna</a> </div>
+                        </div>
+                        <div class="article-scroll__item text-decoration-none">
+                            <a href="https://allsvenskan.se/nyheter/redigs-hymn-tar-hacken-in-i-framtiden/"><img
+                                    src="/assets/images/redig-1920x1080-kopiera-599x337.png"
+                                    alt="Redigs hymn tar Häcken in i framtiden"></a>
+                            <div class="article-info">
+                                <p class="article-date text-color-primary-yellow text-uppercase">14 maj 2024</p>
+                                <p class="article-title text-color-primary-white"><a class="text-color-primary-white"
+                                        href="https://allsvenskan.se/nyheter/redigs-hymn-tar-hacken-in-i-framtiden/">Redigs
+                                        hymn tar Häcken in i framtiden</a></p>
+                            </div>
+                            <div class="d-flex flex-row" style="margin-left: 15px;">
+                                <a class="anniversary-taxonomy-button">Klubbarna</a><a
+                                    class="anniversary-taxonomy-button">Supportrar</a> </div>
+                        </div>
+                        <div class="article-scroll__item text-decoration-none">
+                            <a href="https://allsvenskan.se/nyheter/de-allsvenska-dagslandorna/"><img
+                                    src="/assets/images/dagslandorna-1920x1080-kopiera-599x337.png"
+                                    alt="De allsvenska dagsländorna"></a>
+                            <div class="article-info">
+                                <p class="article-date text-color-primary-yellow text-uppercase">3 maj 2024</p>
+                                <p class="article-title text-color-primary-white"><a class="text-color-primary-white"
+                                        href="https://allsvenskan.se/nyheter/de-allsvenska-dagslandorna/">De allsvenska
+                                        dagsländorna</a></p>
+                            </div>
+                            <div class="d-flex flex-row" style="margin-left: 15px;">
+                                <a class="anniversary-taxonomy-button">Klubbarna</a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+    <footer>
+        <div class="">
+            <div class="container px-0">
+                <div class="footer-sponsors">
+                    <a href="https://track.adform.net/C/?bn=35167881" class="footer-sponsor-item">
+                        <img src="/assets/images/Unibet-Logo-white.png" alt="Unibet">
+                        <p class="footer-sponsors__name text-small text-color-comp-gray-2 text-center">
+                            HUVUDPARTNER OCH PRESENTING PARTNER </p>
+                    </a>
+                    <a href="https://www.max.com/se/sv" class="footer-sponsor-item">
+                        <img src="/assets/images/max-blue-2.png" alt="Max">
+                        <p class="">
+                            MEDIAPARTNER </p>
+                    </a>
+                    <a href="https://www.mgmotor.eu/sv-SE?&amp;utm_source=sef&amp;utm_medium=banner&amp;utm_campaign=sef_sponsorship"
+                        class="footer-sponsors__item">
+                        <img src="/assets/images/MG-logo_black.png" alt="MG">
+                        <p class="">
+                            OFFICIELL PARTNER </p>
+                    </a>
+                    <a href="https://se.select-sport.com" class="footer-sponsor-item">
+                        <img src="/assets/images/Select_logo_black_RGB.png" alt="Select">
+                        <p class="">
+                            OFFICIELL LEVERANTÖR </p>
+                    </a>
+                    <a href="https://seb.se" class="footer-sponsors__item">
+                        <img src="/assets/images/SEB-Wordmark-RGB-Black.png" alt="SEB">
+                        <p class="">
+                            OFFICIELL LEVERANTÖR </p>
+                    </a>
+                    <a href="https://www.strawberry.se" class="footer-sponsors__item">
+                        <img src="/assets/images/strawberry-logo-black.png" alt="Strawberry">
+                        <p class="">
+                            OFFICIELL LEVERANTÖR </p>
+                    </a>
+                    <a href="https://www.newwaveprofile.com" class="footer-sponsors__item">
+                        <img src="/assets/images/NWP-logo.jpg" alt="New Wave">
+                        <p class="">
+                            OFFICIELL LEVERANTÖR </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>

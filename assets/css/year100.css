@@ -1,0 +1,10 @@
+.scroll-section-tags{
+    background: #c2a94b;
+    border-radius: 20px;
+    padding: 5px 10px 4px;
+    color: var(--primary-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Gilroy-bold", sans-serif;
+    font-size: 11px;
+}

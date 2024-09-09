@@ -5,8 +5,9 @@
 @import url('https://fonts.cdnfonts.com/css/gilroy-bold');
 @import "team-banner.css";
 @import "navigation.css";
-@import "services.css";
 @import "newsletter.css";
+@import "league-stats.css";
+@import "year100.css";
 @import "footer.css";
 
 /* ROOT */

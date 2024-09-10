@@ -23,7 +23,6 @@
     --text-color-secondary: grey;
     --backdrop-image: url(../images/anniversary-lines.png);
     --backdrop-gradient: linear-gradient(180deg, transparent 27.85%, #0e204d 78.26%);
-    --fallback-image: url(../images/fallback-image-allsvenskan.png);
 }
 
 
@@ -143,6 +142,6 @@ body {
 
 @media (max-width: 576px) {
     .advertisement img {
-        margin: 0 auto;  /* Center-aligns the images on small screens */
+        margin: 0 auto;
     }
 }

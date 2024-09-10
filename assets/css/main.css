@@ -21,11 +21,9 @@
     --comp-color-data: #19336a;
     --text-color-primary:#ffd600;
     --text-color-secondary: grey;
-    --backdrop-image: url(assets/images/anniversary-lines.png);
+    --backdrop-image: url(../images/anniversary-lines.png);
     --backdrop-gradient: linear-gradient(180deg, transparent 27.85%, #0e204d 78.26%);
-    --fallback-image: url(assets/images/fallback-image-allsvenskan.png);
-    --grad-color-4: linear-gradient(109.27deg, rgba(14, 26, 70, .95) 41.52%, rgba(27, 69, 142, .95) 115.94%), linear-gradient(0deg, hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1));
-    --grad-hero: linear-gradient(359.37deg, #0e204d -.89%, rgba(14, 32, 77, .4) 99.54%), linear-gradient(0deg, hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1));
+    --fallback-image: url(../images/fallback-image-allsvenskan.png);
 }
 
 
@@ -41,18 +39,18 @@ body {
     margin: 0;
 }
 
+
+/* Backdrop Styling */
 .backdrop {
-    background-position: top 160px left 0;
+    background: var(--backdrop-image) no-repeat center center fixed;
+    background-size: cover; 
     position: absolute;
-    width: 100%;
-    height: 1200px;
-    z-index: -1;
-    background: var(--backdrop-gradient), var(--backdrop-image), #0000 0 / cover no-repeat;
-    background-blend-mode: normal, lighten;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background-position: center 110px; 
 }
 
 

@@ -55,11 +55,49 @@ body {
     top: 0;
 }
 
+
+
 /* Main */
 .main-container{
     width: 100%;
     margin: 0 auto;
     padding: 0 120px;
+}
+
+/* Video Content Styling */
+.video-content {
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.video-title {
+    font-family: BB Strata Pro SEF, sans-serif;
+    font-size: 46px;
+    color: var(--text-color-primary);
+    text-transform: uppercase;
+}
+
+.video-description {
+    font-family: 'Gilroy-bold', sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Video Container */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.video {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+    margin-bottom: 50px;
 }
 
 
@@ -98,4 +136,15 @@ body {
 /* Advertisement */
 .advertisement{
     border-radius: 10px;
+}
+
+.advertisement img{
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 576px) {
+    .advertisement img {
+        margin: 0 auto;  /* Center-aligns the images on small screens */
+    }
 }

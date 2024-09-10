@@ -32,8 +32,8 @@ footer{
 }
 
 .sponsor-text{
-    font-family: 'Gilroy-light', sans-serif;
-    color: var(--text-color-secondary);
+    font-family: 'Gilroy-bold', sans-serif;
+    color: black;
 }
 
 .copyright{
@@ -53,4 +53,68 @@ footer{
     color: #dadada;
     text-decoration: none;
     font-size: 14px;
+}
+
+
+
+/* NEWSLETTER SUBSCRIPTION */
+.newsletter-form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.newsletter-form .form-label {
+    font-family: 'Gilroy-bold', sans-serif;
+    font-size: 16px;
+    color: var(--text-color-primary);
+    margin-bottom: 10px;
+}
+
+.input-group {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group .form-control {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid var(--text-color-secondary);
+    font-family: 'Gilroy-light', sans-serif;
+}
+
+.input-group .button--primary {
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    background-color: var(--comp-color-5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.input-group .button--primary:hover {
+    background-color: var(--comp-color-4);
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .input-group {
+        flex-direction: column;
+    }
+
+    .input-group .form-control {
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .input-group .button--primary {
+        border-radius: 5px;
+        width: 100%;
+    }
 }
